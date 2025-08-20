@@ -8,8 +8,8 @@ export LC_ALL=C
 
 
 # 全局下载地址配置
-DOCKER_COMPOSEV4_URL="https://raw.githubusercontent.com/bqlpfy/flux-panel/refs/heads/main/docker-compose-v4.yml"
-DOCKER_COMPOSEV6_URL="https://raw.githubusercontent.com/bqlpfy/flux-panel/refs/heads/main/docker-compose-v6.yml"
+DOCKER_COMPOSEV4_URL="https://raw.githubusercontent.com/loadinghtml/flux-panel/refs/heads/main/docker-compose-v4.yml"
+DOCKER_COMPOSEV6_URL="hhttps://raw.githubusercontent.com/loadinghtml/flux-panel/refs/heads/main/docker-compose-v6.yml"
 GOST_SQL_URL="https://raw.githubusercontent.com/bqlpfy/flux-panel/refs/heads/main/gost.sql"
 
 COUNTRY=$(curl -s https://ipinfo.io/country)
