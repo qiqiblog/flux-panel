@@ -67,6 +67,9 @@
         background-color: #ffffff;
         color: #000000;
         transition: background-color 0.2s ease, color 0.2s ease;
+        /* 禁用弹性滚动 */
+        overscroll-behavior: none;
+        -webkit-overflow-scrolling: touch;
       }
       
       /* 暗色主题样式 */
@@ -78,6 +81,18 @@
       #root {
         min-height: 100vh;
         background-color: inherit;
+        /* 确保根元素也禁用弹性滚动 */
+        overscroll-behavior: none;
+      }
+
+      /* 使用动态视口单位，避免移动端地址栏导致的额外滚动 */
+      @supports (height: 100dvh) {
+        #root { min-height: 100dvh; }
+      }
+
+      /* iOS Safari 旧版本兼容 */
+      @supports (-webkit-touch-callout: none) {
+        #root { min-height: -webkit-fill-available; }
       }
       
       /* 防止加载时的闪烁 */
@@ -88,6 +103,8 @@
       /* 确保在主题切换时平滑过渡 */
       html {
         transition: color-scheme 0.2s ease;
+        /* 禁用整个页面的弹性滚动 */
+        overscroll-behavior: none;
       }
       
       /* 防止布局切换时的闪屏 */
@@ -105,6 +122,19 @@
       
       .pc-mode.dark #root {
         background-color: #000000;
+      }
+            
+      /* 移动端滚动优化 */
+      @media (max-width: 768px) {
+        html, body {
+          overscroll-behavior: none;
+          -webkit-overflow-scrolling: touch;
+        }
+        
+        /* 确保固定定位的元素不受滚动影响 */
+        .fixed {
+          overscroll-behavior: none;
+        }
       }
     </style>
     <meta key="title" content="flux-panel" property="og:title" />
