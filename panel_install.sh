@@ -16,10 +16,10 @@ PROXY_SH_URL="https://raw.githubusercontent.com/bqlpfy/flux-panel/refs/heads/mai
 COUNTRY=$(curl -s https://ipinfo.io/country)
 if [ "$COUNTRY" = "CN" ]; then
     # 拼接 URL
-    DOCKER_COMPOSEV4_URL="https://ghfast.top/${DOCKER_COMPOSEV4_URL}"
-    DOCKER_COMPOSEV6_URL="https://ghfast.top/${DOCKER_COMPOSEV6_URL}"
-    GOST_SQL_URL="https://ghfast.top/${GOST_SQL_URL}"
-    PROXY_SH_URL="https://ghfast.top/${PROXY_SH_URL}"
+    DOCKER_COMPOSEV4_URL="https://hk.gh-proxy.com/${DOCKER_COMPOSEV4_URL}"
+    DOCKER_COMPOSEV6_URL="https://hk.gh-proxy.com/${DOCKER_COMPOSEV6_URL}"
+    GOST_SQL_URL="https://hk.gh-proxy.com/${GOST_SQL_URL}"
+    PROXY_SH_URL="https://hk.gh-proxy.com/${PROXY_SH_URL}"
 fi
 
 
