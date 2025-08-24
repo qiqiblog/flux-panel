@@ -5,7 +5,7 @@ INSTALL_DIR="/etc/gost"
 COUNTRY=$(curl -s https://ipinfo.io/country)
 if [ "$COUNTRY" = "CN" ]; then
     # 拼接 URL
-    DOWNLOAD_URL="https://hubproxy.114515.best/${DOWNLOAD_URL}"
+    DOWNLOAD_URL="https://hk.gh-proxy.com/${DOWNLOAD_URL}"
 fi
 
 
