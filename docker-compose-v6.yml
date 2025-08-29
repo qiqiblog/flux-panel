@@ -54,7 +54,7 @@ services:
       start_period: 90s
 
   frontend:
-    image:qiyue2789/vite-frontend:latest
+    image: qiyue2789/vite-frontend:latest
     container_name: vite-frontend
     restart: unless-stopped
     ports:
