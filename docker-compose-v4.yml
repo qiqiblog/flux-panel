@@ -1,6 +1,6 @@
 services:
   mysql:
-    image: ibex/debian-mysql-server-5.7
+    image: mysql:5.7
     container_name: gost-mysql
     restart: unless-stopped
     environment:
